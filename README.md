@@ -1,4 +1,4 @@
-# SQLServer_Data_Warehouse_Project
+# Data Warehouse and Analytics Project
 ## Building My First Modern Data Warehouse With SQL Server, Including ETL Processes, Data Modelling And Analytics. 
 
 <!-- TABLE OF CONTENTS -->

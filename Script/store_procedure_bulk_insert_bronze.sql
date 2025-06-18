@@ -1,7 +1,23 @@
+/*
+===============================================================================
+Stored Procedure: load_bronze
+===============================================================================
+Script Purpose:
+    This stored procedure loads raw data into the Bronze layer of the 
+    Medallion architecture data warehouse.
 
+    It performs the following tasks:
+        - Truncates 6 target tables (3 CRM and 3 ERP) in the bronze schema.
+        - Loads data using BULK INSERT from local CSV files.
+        - Logs start time, end time, and duration of each load.
+        - Implements error handling using TRY...CATCH blocks for robustness.
 
-
-
+    Run this procedure after creating the Bronze tables to populate them
+    with the latest raw data from source files.
+===============================================================================
+To Execute Store Procedure use the blow:
+EXEC bronze.load_bronze;
+*/
 
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS

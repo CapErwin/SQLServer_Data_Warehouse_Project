@@ -22,6 +22,9 @@ Key Transformations:
     - Adds dwh_create_date column with default value GETDATE() for metadata.
 ===============================================================================
 */
+
+SELECT * FROM silver.crm_cust_info;
+
 -- UPDATE THE METADATE OF THE datetime to date, and add a new column(cat_id) from seperating prd_key code.
 
 IF OBJECT_ID ('silver.crm_prd_info', 'U') IS NOT NULL
